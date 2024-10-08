@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+  background-color: #f0f2f5;
+}
+a{
+  text-decoration: none;
+}
+
+.main{
+  background: #fff;
+  box-shadow: 0 1px 2px 0 rgb(26, 31, 44,0.25);
+  border-radius: 8px ;
+  padding: 20px;
+  max-width: 1140px;
+  margin: 0 auto ; 
+  margin-top: 20px ;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  min-height: 70px;
+  /* min-width: 500px; */
+}
+.logo a{
+  font-size: 24px;
+  font-weight: 600;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo a i{
+  font-size: 35px;
+}
+.logo a .folio{
+  color:#1e88e5 ;
+  margin-left: 5px;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+nav ul{
+  margin: 0 auto;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+nav ul li a{
+  color: #7b7d7d;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 12px;
+  border-radius: 8px;
+  transition: 0.15s;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  background: #d6e0ee;
+}
+.btn a{
+  background: black;
+  padding: 16px 24px;
+  border-radius: 8px;
+  color: whitesmoke;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 16px;
+  transition: 0.10s;
+}
+.btn a:hover{
+  background: #1e88e5;
+}
+.btn a i{
+  margin-left: 8px;
+}
+#checkbtn{
+  display: none;
+}
+#check{
+  display: none;
+}
+
+
+/* Media Querys Reponsive are  */
+
+@media only screen and (max-width:768px) {
+  nav ul {
+    
+
+  }
+  .btn{
+    width: 100%;
+  }
+  #checkbtn{
+    display: block;
+    float: right;
+  }
+}
